@@ -3,6 +3,7 @@
 import HeroBanner from "@/components/pages/home-page/hero-banner";
 import Location from "@/components/pages/home-page/location";
 import ProjectOverview from "@/components/pages/home-page/project-overview";
+import Ultilities from "@/components/pages/home-page/ultilities";
 import { FullPage, Slide } from "react-full-page";
 
 export default function Home() {
@@ -16,6 +17,9 @@ export default function Home() {
       </Slide>
       <Slide>
         <Location />
+      </Slide>
+      <Slide>
+        <Ultilities />
       </Slide>
     </FullPage>
   );
