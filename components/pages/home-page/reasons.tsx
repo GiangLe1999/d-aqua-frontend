@@ -50,7 +50,7 @@ const Reasons = () => {
     >
       <div className="container h-screen mx-auto">
         <div className="flex flex-wrap gap-10">
-          <div className="md:w-1/3 mt-[6%]">
+          <div className="md:w-1/3 mt-[5%]">
             <div className="relative text-center text-white">
               <div>
                 <h2 className="text-[52px] leading-none pb-4 pl-[5px] pr-[5px] font-mono bg-linear-to-r from-[#05c5b4] to-[#b7e65a] bg-clip-text text-transparent inline-block">
