@@ -1,5 +1,6 @@
 "use client";
 
+import Facilities from "@/components/pages/home-page/facilities";
 import HeroBanner from "@/components/pages/home-page/hero-banner";
 import Location from "@/components/pages/home-page/location";
 import ProjectOverview from "@/components/pages/home-page/project-overview";
@@ -20,6 +21,9 @@ export default function Home() {
       </Slide>
       <Slide>
         <Ultilities />
+      </Slide>
+      <Slide>
+        <Facilities />
       </Slide>
     </FullPage>
   );

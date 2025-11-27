@@ -11,19 +11,17 @@ const timelineData = [
     position: "top",
     imgWidth: 200,
     imgHeight: 190,
-    circleSize: 43,
   },
   {
     time: "05",
     unit: "phút",
-    title: "Trường mầm non Steame Garten",
+    title: "Coopmart Tuy Lý Vương",
     subtitle: "Trường THCS Lê Lại",
-    subtitle2: "Coopmart Tuy Lý Vương",
+    subtitle2: "Trường mầm non Steame Garten",
     image: "/images/home-page/coop-mart-tuy-ly-vuong.png",
     position: "bottom",
     imgWidth: 200,
     imgHeight: 177,
-    circleSize: 35,
   },
   {
     time: "10",
@@ -35,7 +33,6 @@ const timelineData = [
     position: "top",
     imgWidth: 200,
     imgHeight: 172,
-    circleSize: 28,
   },
   {
     time: "15",
@@ -47,7 +44,6 @@ const timelineData = [
     position: "bottom",
     imgWidth: 200,
     imgHeight: 190,
-    circleSize: 21,
   },
   {
     time: "20",
@@ -59,7 +55,6 @@ const timelineData = [
     position: "top",
     imgWidth: 200,
     imgHeight: 177,
-    circleSize: 19,
   },
 ];
 
@@ -80,13 +75,22 @@ export default function Ultilities() {
           {/* Timeline Container */}
           <div className="relative">
             {/* Horizontal Line */}
-            <Image
-              src="/images/home-page/thanh-ngang.png"
-              alt="Thanh ngang"
-              className="object-cover"
-              width={1323}
-              height={3}
-            />
+            <div className="absolute top-[56%] left-0 right-0">
+              <div className="relative h-[3px]">
+                <Image
+                  src="/images/home-page/thanh-ngang.png"
+                  alt="Thanh ngang"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="w-[43px] aspect-square rounded-full border-2 border-[#3ce9ef] absolute -top-5 left-[8.5%] bg-[#EBFBFE] before:content-[''] before:block before:absolute before:-top-[89%] before:left-1/2 before:w-px before:h-[35px] before:bg-linear-to-b before:from-[#08708e] before:to-[#00ffe8]"></div>
+              <div className="w-[35px] aspect-square rounded-full border-2 border-[#3ce9ef] absolute -top-4 left-[29%] bg-[#EBFBFE] before:content-[''] before:block before:absolute before:top-full before:left-1/2 before:w-px before:h-[35px] before:bg-linear-to-b before:from-[#08708e] before:to-[#00ffe8]"></div>
+              <div className="w-7 aspect-square rounded-full border-2 border-[#3ce9ef] absolute -top-3 left-[49%] bg-[#EBFBFE] before:content-[''] before:block before:absolute before:-top-[146%] before:left-1/2 before:w-px before:h-[35px] before:bg-linear-to-b before:from-[#08708e] before:to-[#00ffe8]"></div>
+              <div className="w-[21px] aspect-square rounded-full border-2 border-[#3ce9ef] absolute -top-2.5 left-[69%] bg-[#EBFBFE] before:content-[''] before:block before:absolute before:top-full before:left-1/2 before:w-px before:h-[35px] before:bg-linear-to-b before:from-[#08708e] before:to-[#00ffe8]"></div>
+              <div className="w-[19px] aspect-square rounded-full border-2 border-[#3ce9ef] absolute -top-2 left-[89%] bg-[#EBFBFE] before:content-[''] before:block before:absolute before:-top-[240%] before:left-1/2 before:w-px before:h-[35px] before:bg-linear-to-b before:from-[#08708e] before:to-[#00ffe8]"></div>
+            </div>
 
             {/* Timeline Items */}
             <div className="relative flex justify-between items-center">
@@ -106,26 +110,18 @@ export default function Ultilities() {
                         width={item.imgWidth}
                         height={item.imgHeight}
                       />
-                      <div className="text-center mb-2">
-                        <div className="flex items-end justify-center gap-1">
-                          <span className="text-5xl font-bold text-teal-600">
+                      <div className="text-center mb-2 mt-32">
+                        <div className="flex items-end justify-center gap-1 mb-2">
+                          <span className="text-6xl font-bold text-[#08708e]">
                             {item.time}
                           </span>
-                          <span className="text-2xl text-teal-500 font-mono mb-1">
+                          <span className="text-3xl text-[#08708e] font-mono mb-1">
                             {item.unit}
                           </span>
                         </div>
                       </div>
 
-                      {/* Circle */}
-                      <div className="relative z-10">
-                        <div
-                          className="aspect-square rounded-full bg-white border-4 border-teal-400 shadow-md"
-                          style={{ width: item.circleSize }}
-                        ></div>
-                      </div>
-
-                      <div className="text-center max-w-xs">
+                      <div className="text-center max-w-xs space-y-1.5">
                         <p className="font-semibold text-gray-800 text-sm leading-tight">
                           {item.title}
                         </p>
@@ -141,18 +137,18 @@ export default function Ultilities() {
 
                   {/* Bottom Item */}
                   {item.position === "bottom" && (
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center mt-36">
                       <div className="text-center mb-2">
-                        <div className="flex items-end justify-center gap-1">
-                          <span className="text-5xl font-bold text-teal-600">
+                        <div className="flex items-end justify-center gap-1 mb-2">
+                          <span className="text-6xl font-bold text-[#08708e]">
                             {item.time}
                           </span>
-                          <span className="text-2xl text-teal-500 font-mono mb-1">
+                          <span className="text-3xl text-[#08708e] font-mono mb-1">
                             {item.unit}
                           </span>
                         </div>
                       </div>
-                      <div className="text-center max-w-xs mb-4">
+                      <div className="text-center max-w-xs space-y-1.5">
                         <p className="font-semibold text-gray-800 text-sm leading-tight">
                           {item.title}
                         </p>
@@ -164,17 +160,10 @@ export default function Ultilities() {
                         </p>
                       </div>
 
-                      <div className="relative z-10">
-                        <div
-                          className="aspect-square rounded-full bg-white border-4 border-teal-400 shadow-md"
-                          style={{ width: item.circleSize }}
-                        ></div>
-                      </div>
-
                       <Image
                         src={item.image}
                         alt={item.title}
-                        className="object-cover"
+                        className="object-cover mt-28"
                         width={item.imgWidth}
                         height={item.imgHeight}
                       />
