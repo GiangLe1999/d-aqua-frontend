@@ -4,6 +4,7 @@ import Facilities from "@/components/pages/home-page/facilities";
 import Galleries from "@/components/pages/home-page/galleries";
 import HeroBanner from "@/components/pages/home-page/hero-banner";
 import Location from "@/components/pages/home-page/location";
+import News from "@/components/pages/home-page/news";
 import ProjectOverview from "@/components/pages/home-page/project-overview";
 import Reasons from "@/components/pages/home-page/reasons";
 import Strengths from "@/components/pages/home-page/strengths";
@@ -36,6 +37,9 @@ export default function Home() {
       </Slide>
       <Slide>
         <Galleries />
+      </Slide>
+      <Slide>
+        <News />
       </Slide>
     </FullPage>
   );
