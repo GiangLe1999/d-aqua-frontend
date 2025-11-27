@@ -94,7 +94,7 @@ const FacilitiesRotatingMenu = ({ activeIndex, setActiveIndex }: Props) => {
   return (
     <div
       className="absolute top-1/2 -translate-y-1/2 z-10"
-      style={{ left: -120 }} // Dịch sang trái để ẩn nửa bên trái
+      style={{ left: -100 }} // Dịch sang trái để ẩn nửa bên trái
     >
       {/* Container chung */}
       <div
